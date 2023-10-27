@@ -10,28 +10,30 @@
     <header>
       <nav class="container-navbar">
         <div class="container-btn-nav">
-          <a href="/">Home</a>
-          <a href="/users">Users</a>
+          <a href="/" class="btn">Home</a>
+          <a href="/users" class="btn">Users</a>
         </div>
       </nav>
-      <div class="container_title">
-        <h1>Studyanniversary</h1>
+    </header>
+    <div class="container-global">
+      <div class="container-title">
+        <h1 class="titles">Studyanniversary</h1>
       </div>
-      <div class="container--form">
+      <div class="container-form">
         <p class="title-form">Formulaire d'ajout d'étudiants</p>
         <form action="/" method="POST">
           <div class="form-group">
             <label for="name"
-              >Nom <input type="text" name="name" class="form-control"
+              >Nom: <input type="text" name="name" class="form-control"
             /></label>
             <label for="birth"
-              >Anniversaire
+              >Anniversaire:
               <input type="date" name="birth" class="form-control"
             /></label>
             <button type="submit" class="btn-submit">Ajouter</button>
           </div>
         </form>
       </div>
-    </header>
+    </div>
   </body>
 </html>

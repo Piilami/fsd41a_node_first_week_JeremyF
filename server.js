@@ -82,7 +82,6 @@ const server = createServer(async (req, res) => {
   } else if (req.url === "/users") {
     const copyStudent = [...students];
     formatDate(copyStudent);
-    console.log(students);
     if (req.method === "GET") {
       const user = pug.renderFile("./view/pug/users.pug", { copyStudent });
       res.writeHead(200, {

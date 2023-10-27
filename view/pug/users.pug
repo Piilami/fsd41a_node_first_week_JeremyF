@@ -4,16 +4,18 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel="stylesheet", href="/user")
     title Studyanniversary
-  body
-    header
-      nav.container-nav-bar
+  body.body
+    header.header
+      nav.container-navbar
         div.container-btn-nav
-          a(href='/') Home
-          a(href='/users') Users
-      div.container_title
-        h1 Studyanniversary
+          a(href='/').btn Home
+          a(href='/users').btn Users
+    div.container-global
+      div.container-title
+        h1.titles Studyanniversary
       div.container-student-list
         ul.student-list 
-            each student in copyStudent 
-             li.student-display= student.name + '  ' + student.birth
-             button.delete-button(type="button") X
+          each student in copyStudent
+            div.container-li 
+                li.student-display= student.name + '  ' + student.birth
+                button.delete-button(type="button") X
