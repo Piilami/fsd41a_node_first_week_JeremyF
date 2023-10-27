@@ -4,7 +4,11 @@ dayjs.extend(customParseFormat);
 // ajout des utilisateurs
 
 export const addUser = (students, name, birth) => {
+  if (dayjs(birth, "YYYY-DD-MM", true).isValid()) {
+    birth = dayjs(birth, "YYYY-DD-MM").format("DD/MM/YYYY");
+  }
   const newStudent = { name: name, birth: birth };
+
   students.push(newStudent);
 };
 
