@@ -1,0 +1,19 @@
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel="stylesheet", href="/user")
+    title Studyanniversary
+  body
+    header
+      nav.container-nav-bar
+        div.container-btn-nav
+          a(href='/') Home
+          a(href='/users') Users
+      div.container_title
+        h1 Studyanniversary
+      div.container-student-list
+        ul.student-list 
+            each student in copyStudent 
+             li.student-display= student.name + '  ' + student.birth
+             button.delete-button(type="button") X

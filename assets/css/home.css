@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.container-navbar {
+  background-color: aqua;
+}
+h1 {
+  color: red;
+}
